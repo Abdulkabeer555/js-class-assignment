@@ -7,7 +7,7 @@ function list() {
         fruitsName = prompt('Enter the name of the fruit');
         chooseFruits .push(fruitsName);
     }
-    delete chooseFruits [1];
+    chooseFruits.splice(chooseFruits.indexOf('apple'), 1);
 
     console.log(chooseFruits.join(" | "));
 }
@@ -28,9 +28,9 @@ console.log(lastChar("JavaScript"));
 function reverse(word) {
     return word.split("").reverse().join("");
 }
-console.log(reverse("hello worlds"));
+console.log(reverse("Javascript"));
 
 function reverse2(word) {
     return word.split("").reverse().reverse().join("");
 }
-console.log(reverse2("hello world"));
+console.log(reverse2("Javascript"));
